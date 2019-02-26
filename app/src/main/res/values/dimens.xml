@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ir_widget -->
+    <dimen name="widget_margin">8dp</dimen>
+    <dimen name="button_width">60dp</dimen>
+    <dimen name="button_height">60dp</dimen>
+    <dimen name="button_margin">3dp</dimen>
+    <dimen name="button_padding">2dp</dimen>
+
+    <!-- activity_ir_widget_setting -->
+    <dimen name="spinner_dev_icon_width">60dp</dimen>
+    <dimen name="spinner_dev_icon_height">60dp</dimen>
+    <dimen name="spinner_dev_width">80dp</dimen>
+    <dimen name="spinner_dev_height">60dp</dimen>
+    <dimen name="spinner_dev_dropDownVerticalOffset">40dp</dimen>
+    <dimen name="spinner_btn_dropDownVerticalOffset">50dp</dimen>
+    <dimen name="spinner_signal_dropDownVerticalOffset">50dp</dimen>
+    <dimen name="spinner_margin">5dp</dimen>
+    <dimen name="setTokenBtn_margin">5dp</dimen>
+    <dimen name="setTokenBtn_padding">5dp</dimen>
+
+    <!--<dimen name="spinner_padding">8dp</dimen>-->
+
+    <!-- activity_monitor_setting -->
+
+    <!-- activity_setup_description -->
+    <dimen name="text_area_padding">3dp</dimen>
+
+
+    <dimen name="fab_margin">16dp</dimen>
+
+</resources>

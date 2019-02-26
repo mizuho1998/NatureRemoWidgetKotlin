@@ -1,0 +1,99 @@
+<resources>
+
+    <string name="app_name">NatureRemoWidget</string>
+    <string name="ir_widget_name">IR</string>
+    <string name="ac_widget_name">AC</string>
+
+
+    <!-- setting activity -->
+    <string name="ok">OK</string>
+    <string name="setup_description">設定方法</string>
+    <string name="get_token">トークンを取得</string>
+    <string name="set_token">トークンを設定</string>
+    <string name="note_token">トークンを設定してください.</string>
+    <string name="note_offline">デバイスがオフラインの可能性があります.</string>
+
+
+    <!-- ir_widget -->
+    <string name="no_image">no image</string>
+    <string name="description">no image</string>
+
+    <!-- activity_ir_widget_setting -->
+    <string name="title_activity_standard_widget_setting">StandardWidgetSetting</string>
+    <string name="title_activity_set_token">SetTokenActivity</string>
+    <string name="not_set">設定しない</string>
+
+
+    <!-- AirconditionerSetting -->
+    <string name="select_ac">エアコンを選択してください</string>
+
+
+    <!-- MonitorSetting -->
+    <string name="already_set">トークンはすでに設定されています.\nOKボタンを押してください.</string>
+    <string name="set_yet">トークンを設定してください.</string>
+
+
+    <!-- SetToken activity -->
+    <string name="enter_token">トークンを入力</string>
+
+
+    <!-- http request message -->
+    <string name="message_1">デバイスがオフラインの可能性があります.</string>
+    <string name="message_401">
+        認証情報がかけているため要求が拒否されました.
+        トークンが正しく設定されているか確認してください.
+    </string>
+    <string name="message_402">
+        402.
+    </string>
+    <string name="message_403">
+        サーバーは要求を理解しましたが拒否しました.
+        トークンが正しく設定されているか確認してください.
+    </string>
+    <string name="message_404">
+        404 Not Found.\n
+    </string>
+    <string name="message_else">成功.</string>
+    <!--　debug message　-->
+    <!--<string name="message_1">Your device may be offline.</string>-->
+    <!--<string name="message_401">-->
+        <!--401 Unauthorized.\n-->
+        <!--The request has not been applied because it lacks valid authentication credentials for the target resource.\n-->
+        <!--Check your access token!-->
+    <!--</string>-->
+    <!--<string name="message_402">-->
+        <!--402 Payment Required.\n-->
+        <!--reserved for future use.-->
+    <!--</string>-->
+    <!--<string name="message_403">-->
+        <!--403 Forbidden.\n-->
+        <!--the server understood the request but refuses to authorize it.-->
+    <!--</string>-->
+    <!--<string name="message_404">-->
+        <!--404 Not Found.\n-->
+        <!--the origin server did not find a current representation for the target resource or is not willing to disclose that one exists.-->
+    <!--</string>-->
+    <!--<string name="message_else">Success.</string>-->
+
+
+    <!-- Description -->
+    <string name="description_0">トークンの設定方法\n</string>
+    <string name="description_1">\n
+        1. ウィジェット設定画面下部の「トークンを取得」ボタンを押す。\n
+    </string>
+    <string name="description_2">\n
+        2. ブラウザで開かれたページにログインし、
+        ページ下部の「+Generate access token」ボタンを押しアクセストークンを発行。
+        表示されたトークンは再度表示されないのでメモしておいてください。 \n
+    </string>
+    <string name="description_3">\n3. ウィジェット設定画面に戻り、「トークンを設定」ボタンを押す。\n</string>
+    <string name="description_4">\n4. テキストボックスに先ほど取得したトークンを入力。\n</string>
+    <string name="description_5">\n5. 「OK」ボタンを押してトークンを設定。\n</string>
+    <string name="description_6">\n
+        注意\n
+        スマートフォンの電池の最適化や省電力設定をしていると、アプリが正しく動かないことがあります。
+        そのような場合にはこのウィジェットを省電力機能の除外アプリに設定してください。\n
+    </string>
+
+
+</resources>

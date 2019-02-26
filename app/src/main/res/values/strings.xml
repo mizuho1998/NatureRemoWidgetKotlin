@@ -1,0 +1,72 @@
+<resources>
+
+    <string name="app_name">NatureRemoWidget</string>
+    <string name="ir_widget_name">IR</string>
+    <string name="ac_widget_name">AC</string>
+
+
+    <!-- setting activity -->
+    <string name="ok">OK</string>
+    <string name="setup_description">Description</string>
+    <string name="get_token">get token</string>
+    <string name="set_token">set token</string>
+    <string name="note_token">Set a token.</string>
+    <string name="note_offline">It may be offline.</string>
+
+    <!-- ir_widget -->
+    <string name="no_image">no image</string>
+    <string name="description">no image</string>
+
+    <!-- activity_ir_widget_setting -->
+    <string name="title_activity_standard_widget_setting">StandardWidgetSetting</string>
+    <string name="title_activity_set_token">SetTokenActivity</string>
+    <string name="not_set">Not set</string>
+
+    <!-- AirconditionerSetting -->
+    <string name="select_ac">select air conditioner</string>
+
+    <!-- MonitorSetting -->
+    <string name="already_set">You already have set up a token.</string>
+    <string name="set_yet">Set a token!</string>
+
+    <!-- SetToken activity -->
+    <string name="enter_token">enter your token</string>
+
+    <!-- http request message -->
+    <string name="message_1">Your device may be offline.</string>
+    <string name="message_401">
+        The request has not been applied because it lacks valid authentication credentials for the target resource.\n
+        Please make sure the token is set correctly.
+    </string>
+    <string name="message_402">
+        402
+    </string>
+    <string name="message_403">
+        The server understood the request but refuses to authorize it.
+        Please make sure the token is set correctly.
+    </string>
+    <string name="message_404">
+        404 Not Found.
+    </string>
+    <string name="message_else">Success.</string>
+
+    <!-- Description -->
+    <string name="description_0">How to set the token.\n</string>
+    <string name="description_1">
+        \n1. Press the "Get token" button at the bottom of the widget setting screen.\n
+    </string>
+    <string name="description_2">
+        \n2. Log in to the page opened in the browser,
+        issue the access token by pressing the "+ Generate access token" button at the bottom of the page.
+        Since the displayed token will not be displayed again please make a note. \n
+    </string>
+    <string name="description_3">\n3. Return to the widget setting screen and press the "Set token" button.\n</string>
+    <string name="description_4">\n4. Enter the token you obtained earlier in the text box.\n</string>
+    <string name="description_5">\n5. Press the "OK" button to set the token.\n</string>
+    <string name="description_6">\n
+        Caution\n
+        If you optimize the battery of the smartphone or set power saving, the application may not work properly.
+        In such a case, please set this widget as an exclusion application of power saving function. \n
+    </string>
+
+</resources>

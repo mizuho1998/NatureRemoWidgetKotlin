@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.mizuho.natureremowidgetkotlin">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+            android:allowBackup="true"
+            android:icon="@mipmap/icon"
+            android:label="@string/app_name"
+            android:networkSecurityConfig="@xml/network_security_config"
+            android:roundIcon="@mipmap/icon_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+
+        <activity
+                android:name=".SetupDescription"
+                android:theme="@style/TransparencyTheme">
+        </activity>
+
+        <activity
+                android:name=".BaseSetting"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name=".MonitorSetting"
+                android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+            </intent-filter>
+        </activity>
+
+        <receiver
+                android:name=".Monitor"
+                android:label="Monitor">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+
+            <meta-data
+                    android:name="android.appwidget.provider"
+                    android:resource="@xml/monitor_info"/>
+        </receiver>
+
+        <activity
+                android:name=".ACWidgetSetting"
+                android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+            </intent-filter>
+        </activity>
+
+        <receiver
+                android:name=".ACWidget"
+                android:label="@string/ac_widget_name">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+
+            <meta-data
+                    android:name="android.appwidget.provider"
+                    android:resource="@xml/ac_widget_info"/>
+        </receiver>
+
+        <activity
+                android:name=".IRWidgetSetting"
+                android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+            </intent-filter>
+        </activity>
+
+        <receiver
+                android:name=".IRWidget"
+                android:label="@string/ir_widget_name">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+
+            <meta-data
+                    android:name="android.appwidget.provider"
+                    android:resource="@xml/ir_widget_info"/>
+        </receiver>
+
+        <activity
+                android:name=".SetToken"
+                android:screenOrientation="behind"
+                android:theme="@style/TransparencyTheme"/>
+    </application>
+
+</manifest>

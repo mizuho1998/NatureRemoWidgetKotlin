@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:gravity="top|center"
+        android:orientation="vertical"
+        android:background="#0500ffff"
+        android:layout_margin="5dp"
+        tools:context=".IRWidgetSetting">
+
+    <Spinner
+            android:id="@+id/devIconSpinner"
+            android:overlapAnchor="false"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/spinner_dev_height"
+            android:dropDownWidth="@dimen/spinner_dev_height"
+            android:layout_margin="@dimen/spinner_margin"
+            android:popupBackground="#affefefe"/>
+    <!--android:dropDownVerticalOffset="@dimen/spinner_dev_dropDownVerticalOffset"-->
+
+
+    <LinearLayout
+            android:id="@+id/linerLayout0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+        <Spinner
+                android:id="@+id/icon_spinner0"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        <!--android:dropDownVerticalOffset="@dimen/spinner_btn_dropDownVerticalOffset"-->
+        <!--android:overlapAnchor="false"-->
+
+        <Spinner
+                android:id="@+id/signal_spinner0"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
+        <!--android:dropDownVerticalOffset="@dimen/spinner_signal_dropDownVerticalOffset"-->
+        <!--android:overlapAnchor="false"-->
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/linerLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+        <Spinner
+                android:id="@+id/icon_spinner1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        <!--android:dropDownVerticalOffset="@dimen/spinner_btn_dropDownVerticalOffset"-->
+        <!--android:overlapAnchor="false"-->
+
+        <Spinner
+                android:id="@+id/signal_spinner1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
+        <!--android:dropDownVerticalOffset="@dimen/spinner_signal_dropDownVerticalOffset"-->
+        <!--android:overlapAnchor="false"-->
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/linerLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+        <Spinner
+                android:id="@+id/icon_spinner2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        <!--android:dropDownVerticalOffset="@dimen/spinner_btn_dropDownVerticalOffset"-->
+        <!--android:overlapAnchor="false"-->
+
+        <Spinner
+                android:id="@+id/signal_spinner2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
+        <!--android:dropDownVerticalOffset="@dimen/spinner_signal_dropDownVerticalOffset"-->
+        <!--android:overlapAnchor="false"-->
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/linerLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+        <Spinner
+                android:id="@+id/icon_spinner3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        <!--android:dropDownVerticalOffset="@dimen/spinner_btn_dropDownVerticalOffset"-->
+        <!--android:overlapAnchor="false"-->
+
+        <Spinner
+                android:id="@+id/signal_spinner3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
+        <!--android:dropDownVerticalOffset="@dimen/spinner_signal_dropDownVerticalOffset"-->
+        <!--android:overlapAnchor="false"-->
+    </LinearLayout>
+
+
+
+    <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/setting_button_state"
+            android:text="@string/ok" />
+
+
+    <LinearLayout
+            android:id="@+id/linerLayoutSetTokenButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="end|bottom">
+
+        <Button
+                android:text="@string/setup_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/setupDescriptionBtn"
+                android:background="@drawable/setting_button_state"
+                android:layout_margin="@dimen/setTokenBtn_margin"
+                android:padding="@dimen/setTokenBtn_padding"/>
+
+        <Button
+                android:text="@string/get_token"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/getTokenBtn"
+                android:background="@drawable/setting_button_state"
+                android:layout_margin="@dimen/setTokenBtn_margin"
+                android:padding="@dimen/setTokenBtn_padding"/>
+
+        <Button
+                android:id="@+id/setTokenBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/setting_button_state"
+                android:layout_margin="@dimen/setTokenBtn_margin"
+                android:text="@string/set_token"
+                android:padding="@dimen/setTokenBtn_padding"/>
+
+    </LinearLayout>
+
+</LinearLayout>
