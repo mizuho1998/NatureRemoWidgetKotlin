@@ -14,7 +14,7 @@ import java.net.URL
 class HttpRequest {
 
     companion object {
-        const val TAG = "HttpRequest"
+        const val TAG = "T_HTTPREQUEST"
 
         // HTTP の POST リクエストの送信
         fun postHttpRequest(url: URL, token: String, body: String = ""): Pair<Int, String> {

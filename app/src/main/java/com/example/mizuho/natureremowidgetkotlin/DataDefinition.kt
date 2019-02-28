@@ -7,7 +7,7 @@ data class SettingData(var temp: String = "", var mode: String = "", var vol: St
     }
 }
 
-data class Status(val te: Double, val il: Double, val hu: Double)
+data class Status(val te: Double = 0.0, val il: Double = 0.0, val hu: Double = 0.0)
 
 
 

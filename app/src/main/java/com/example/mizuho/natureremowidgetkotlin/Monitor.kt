@@ -91,36 +91,48 @@ class Monitor : BaseWidget() {
     private fun parseJson(str: String) : Status {
         Log.d(TAG, "parseJson(): $str")
 
-        val result = Klaxon().parseArray<Devices>(str)
-
-        Log.d(TAG, "!!!!!!!???????????????!!!!!!!!!!!!!????????????")
-        Log.d(TAG, result.toString())
-
-        val newestEvents = result?.get(0)?.newest_events
-        val hu = newestEvents?.hu
-        val il = newestEvents?.il
-        val te = newestEvents?.te
-
-        val huVal = hu?.`val`.asTypeDouble()
-        val ilVal = il?.`val`.asTypeDouble()
-        val teVal = te?.`val`.asTypeDouble()
-
-//        val parser: Parser = Parser.default()
-//        val stringBuilder  = StringBuilder(str)
-//        val parseStr       = parser.parse(stringBuilder)
-//        val jsonArrayAny   = parseStr.asType<JsonArray<Any>>()
-//        val jsonArray      = jsonArrayAny?.asJsonArrayOfType<JsonObject>()
-//        val newestEvents   = jsonArray?.get(0)?.obj("newest_events")
+        // use Object binding API (Klaxon)
+//        val result = Klaxon().parseArray<Devices>(str)
 //
+//        Log.d(TAG, result.toString())
+//
+//        val newestEvents = result?.get(0)?.newest_events
 //        val hu = newestEvents?.hu
 //        val il = newestEvents?.il
 //        val te = newestEvents?.te
+//
 //        val huVal = hu?.`val`.asTypeDouble()
 //        val ilVal = il?.`val`.asTypeDouble()
 //        val teVal = te?.`val`.asTypeDouble()
 
+        // use Low level API (Klaxon)
+        val parser: Parser = Parser.default()
+        val stringBuilder  = StringBuilder(str)
+        val parseStr       = parser.parse(stringBuilder)
+        val jsonArrayAny   = parseStr.asType<JsonArray<Any>>()
+        val jsonArray      = jsonArrayAny?.asJsonArrayOfType<JsonObject>()
+        val newestEvents   = jsonArray?.get(0)?.obj("newest_events")
 
-        return Status(hu=huVal, il=ilVal, te=teVal)
+        val hu = newestEvents?.obj("hu")
+        val il = newestEvents?.obj("il")
+        val te = newestEvents?.obj("te")
+
+        val huDouble = hu?.filter { (k, v) -> k == "val" }
+                         ?.map { it.value.asTypeDouble() }
+                         ?.get(0) ?: 0.0
+        val ilDouble = il?.filter { (k, v) -> k == "val" }
+                         ?.map { it.value.asTypeDouble() }
+                         ?.get(0) ?: 0.0
+        val teDouble = te?.filter { (k, v) -> k == "val" }
+                         ?.map { it.value.asTypeDouble() }
+                         ?.get(0) ?: 0.0
+
+//        Log.d(TAG, newestEvents.toString())
+//        Log.d(TAG, "huDouble: $huDouble")
+//        Log.d(TAG, "ilDouble: $ilDouble")
+//        Log.d(TAG, "teDouble: $teDouble")
+
+        return Status(hu=huDouble, il=ilDouble, te=teDouble)
     }
 
     private fun getJsonStr(context: Context): String {
