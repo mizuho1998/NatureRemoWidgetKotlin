@@ -4,7 +4,7 @@ NatureRemoWidget
 NatureRemoのAndroidウィジェット。
 ホーム画面からNatureRemoを操作できます。
 
-![画像](./app/src/main/res/drawable/image.jpg)
+![画像](./app/src/main/res/drawable/image.png)
 
 ## Usage
 
