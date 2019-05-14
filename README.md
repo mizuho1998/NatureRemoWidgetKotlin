@@ -4,6 +4,8 @@ NatureRemoWidget
 NatureRemoのAndroidウィジェット。
 ホーム画面からNatureRemoを操作できます。
 
+![画像](./app/src/main/res/drawable/image.jpg)
+
 ## Usage
 
 1. ウィジェット設定画面下部の「トークンを取得」ボタンを押す。  
